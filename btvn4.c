@@ -6,7 +6,9 @@ int main(){
 	scanf("%d",&a);
 	if (a<0){
 		printf("\nThu nhap cua ban phai la so duong.");
-	}else if(a<=5){
+		return 1;
+	}
+	if(a<=5){
 		b = a * ((float)5 / 100);
 		printf("Thue phai dong la: %.2f trieu dong.", b);
 	}else if(a>5 && a<=10){
